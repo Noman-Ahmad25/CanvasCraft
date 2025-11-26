@@ -147,6 +147,12 @@ const Canvas = forwardRef(({ tool, color, size }, ref) => {
       onMouseMove={draw}
       onMouseUp={stopDrawing}
       onMouseLeave={stopDrawing}
+      onTouchStart={(e) => startDrawing(e.touches[0])}
+  onTouchMove={(e) => {
+    e.preventDefault();
+    draw(e.touches[0]);
+  }}
+  onTouchEnd={stopDrawing}
       className="canvas"
     />
   );
