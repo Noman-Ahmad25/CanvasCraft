@@ -1,16 +1,93 @@
-# React + Vite
+CanvasCraft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and powerful React-based drawing application.
 
-Currently, two official plugins are available:
+CanvasCraft is a lightweight React paint application that allows users to draw with brushes, create shapes, erase, undo/redo, switch themes, and save artwork as images.
+It includes a clean UI, dark mode, toolbar actions, and responsive canvas sizing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+🖌️ Drawing Tools
 
-## React Compiler
+Brush
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Eraser
 
-## Expanding the ESLint configuration
+Line
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Rectangle
+
+Circle
+
+🧰 Advanced Controls
+
+Undo / Redo
+
+Clear Canvas
+
+Change Color
+
+Change Brush Size
+
+Save as PNG / JPG
+
+🌗 Dark Mode
+
+Fully theme-supported (background, toolbar, canvas area)
+
+💾 Export
+
+Download your drawing in PNG or JPEG format.
+
+📂 Project Structure
+src/
+├── App.jsx
+├── Canvas.jsx
+├── Menu.jsx
+├── Main.jsx
+├── App.css
+├── styles.css
+└── assets/ (optional icons or images)
+
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/your-username/canvascraft.git
+cd canvascraft
+
+2. Install dependencies
+npm install
+
+3. Run the development server
+npm run dev
+
+4. Build for production
+npm run build
+
+🧠 How It Works
+
+Canvas.jsx
+Handles all drawing logic including brush, shapes, undo/redo, and canvas rendering.
+
+Menu.jsx
+Provides UI controls for tools, colors, size, theme switch, and save.
+
+App.jsx
+Connects states (tool, size, color) with canvas actions using ref.
+
+styles.css
+Contains global styling and dark/light theme styles.
+
+🎯 Future Improvements
+
+Mobile drawing support
+
+Layers
+
+Text tool
+
+Shape fill option
+
+Custom brushes
+
+📝 License
+
+This project is free and open-source. You may modify and use it freely.
