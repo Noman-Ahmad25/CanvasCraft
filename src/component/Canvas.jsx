@@ -89,6 +89,7 @@ const Canvas = forwardRef(({ tool, color, size }, ref) => {
     if (tool === "brush" || tool === "eraser") {
       ctx.beginPath();
       ctx.moveTo(pos.x, pos.y);
+      ctx.globalCompositeOperation = (tool === "eraser") ? "destination-out" : "source-over";
       ctx.strokeStyle = tool === "eraser" ? "#ffffff" : color;
     } else {
       setSnapshot(ctx.getImageData(0, 0, canvasRef.current.width, canvasRef.current.height));
