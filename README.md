@@ -1,44 +1,40 @@
-CanvasCraft
+# CanvasCraft 🎨  
+A React-based canvas drawing web application built with modern frontend tools.
 
-A simple and powerful React-based drawing application.
+## 📌 Overview
+CanvasCraft is a fully responsive web application that allows users to draw freely on a canvas, create shapes, erase content, and export drawings as images. The project focuses on hands-on usage of React, HTML Canvas APIs, and modern frontend tooling.
 
-CanvasCraft is a lightweight React paint application that allows users to draw with brushes, create shapes, erase, undo/redo, switch themes, and save artwork as images.
-It includes a clean UI, dark mode, toolbar actions, and responsive canvas sizing.
+---
 
-🚀 Features
-🖌️ Drawing Tools
+## ✨ Features
+- Freehand drawing on canvas  
+- Shape drawing support  
+- Eraser tool  
+- Undo / Redo functionality  
+- Dark / Light theme toggle  
+- Image export functionality  
+- Responsive design with mobile touch gesture support  
 
-Brush
+---
 
-Eraser
+## 🛠 Tech Stack
+- **Frontend:** React 19, Vite  
+- **Canvas:** HTML Canvas API  
+- **Styling:** CSS3  
+- **Deployment:** Vercel  
 
-Line
+---
 
-Rectangle
+## 🚀 Live Demo
+👉 https://canvas-craft-nu.vercel.app/
 
-Circle
+---
 
-🧰 Advanced Controls
+## ⚙️ Installation & Setup
 
-Undo / Redo
 
-Clear Canvas
-
-Change Color
-
-Change Brush Size
-
-Save as PNG / JPG
-
-🌗 Dark Mode
-
-Fully theme-supported (background, toolbar, canvas area)
-
-💾 Export
-
-Download your drawing in PNG or JPEG format.
-
-📂 Project Structure
+### 📂 Project Structure
+```
 src/
 ├── App.jsx
 ├── Canvas.jsx
@@ -47,47 +43,69 @@ src/
 ├── App.css
 ├── styles.css
 └── assets/ (optional icons or images)
+```
 
-⚙️ Installation & Setup
-1. Clone the repository
+### 1. Clone the repository
+```
 git clone https://github.com/your-username/canvascraft.git
 cd canvascraft
+```
+### 2. Install dependencies
 
-2. Install dependencies
+```
 npm install
+```
 
-3. Run the development server
+### 3. Run the development server
+
+```
 npm run dev
+```
 
-4. Build for production
+### 4. Build for production
+ ```
 npm run build
+```
 
-🧠 How It Works
+---
+## 🧠 How It Works
 
-Canvas.jsx
+### Canvas.jsx
 Handles all drawing logic including brush, shapes, undo/redo, and canvas rendering.
 
-Menu.jsx
+### Menu.jsx
 Provides UI controls for tools, colors, size, theme switch, and save.
 
-App.jsx
+### App.jsx
 Connects states (tool, size, color) with canvas actions using ref.
 
-styles.css
+### styles.css
 Contains global styling and dark/light theme styles.
 
-🎯 Future Improvements
+--- 
+## 📚 What I Learned
 
-Mobile drawing support
+- Managing canvas state and redraw logic in React
 
-Layers
+- Implementing undo/redo functionality for canvas-based applications
 
-Text tool
+- Handling mobile touch events for better usability
 
-Shape fill option
+- Structuring a React project using Vite
 
-Custom brushes
+- Deploying frontend applications using Vercel
+---
 
-📝 License
+## 🎯 Future Improvements
 
+- Mobile drawing support
+- Layers
+- Text tool
+- Shape fill option
+- Custom brushes
+
+ ---
+
+## 📝 License
 This project is free and open-source. You may modify and use it freely.
+
