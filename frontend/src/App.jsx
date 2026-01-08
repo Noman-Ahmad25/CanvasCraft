@@ -26,10 +26,7 @@ export default function App() {
         <Routes>
           <Route
             path="/"
-            element={isAuth ? (
-              <HomePage imageToLoad={imageToLoad} darkMode={darkMode} />
-            ) : (
-              <Navigate to="/login" />
+            element={<HomePage imageToLoad={imageToLoad} darkMode={darkMode} />} /> />
             )}
           />
 
