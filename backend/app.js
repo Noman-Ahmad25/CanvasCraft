@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const authRoutes = require("./src/routes/auth.auth");
+const authRoutes = require("./src/routes/auth.route");
 const canvasRoutes = require("./src/routes/canvas.route");
 
 const app = express();
