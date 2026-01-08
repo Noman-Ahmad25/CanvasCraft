@@ -1,4 +1,4 @@
-const API_URL = import.meta.env?.VITE_API_URL || 'http://localhost:5000/api/canvases';
+const API_URL = import.meta.env?.VITE_API_URL || 'http://localhost:5000/api';
 
 
 // Helper to get headers with the token
