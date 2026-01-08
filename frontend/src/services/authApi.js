@@ -1,5 +1,5 @@
 // Use environment variables for different environments (Dev vs. Production)
-const API_URL = import.meta.env?.VITE_API_URL || "http://localhost:5000/api/auth";
+const API_URL = import.meta.env?.VITE_API_URL || "http://localhost:5000/api";
 
 /**
  * Helper to handle fetch requests and errors
@@ -26,5 +26,5 @@ const handleRequest = async (endpoint, data) => {
   }
 };
 
-export const login = (data) => handleRequest("/login", data);
-export const register = (data) => handleRequest("/register", data);
+export const login = (data) => handleRequest("/auth/login", data);
+export const register = (data) => handleRequest("/auth/register", data);
