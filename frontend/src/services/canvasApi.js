@@ -8,7 +8,7 @@ const getAuthHeaders = () => ({
 });
 
 export const getCanvases = async (page = 1, limit = 5) => {
-  const res = await fetch(`${API_URL}?page=${page}&limit=${limit}`, {
+  const res = await fetch(`${API_URL}/canvases?page=${page}&limit=${limit}`, {
     headers: getAuthHeaders() // Added authentication
   });
   if (!res.ok) throw new Error("Failed to fetch Canvases");
@@ -16,7 +16,7 @@ export const getCanvases = async (page = 1, limit = 5) => {
 };
 
 export const createCanvas = async (data) => {
-  const res = await fetch(API_URL, {
+  const res = await fetch(`${API_URL}/canvases`, {
     method: "POST",
     headers: getAuthHeaders(),
     body: JSON.stringify(data)
@@ -26,7 +26,7 @@ export const createCanvas = async (data) => {
 };
 
 export const updateCanvas = async (id, data) => {
-  const res = await fetch(`${API_URL}/${id}`, {
+  const res = await fetch(`${API_URL}/canvases/${id}`, {
     method: "PUT",
     headers: getAuthHeaders(),
     body: JSON.stringify(data)
@@ -36,7 +36,7 @@ export const updateCanvas = async (id, data) => {
 };
 
 export const deleteCanvas = async (id) => {
-  const res = await fetch(`${API_URL}/${id}`, {
+  const res = await fetch(`${API_URL}/canvases/${id}`, {
     method: "DELETE",
     headers: getAuthHeaders() // Added authentication
   });
